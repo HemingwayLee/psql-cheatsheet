@@ -1,0 +1,1 @@
+Triggers in PSQL can not be executed after a set of insert

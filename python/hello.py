@@ -7,7 +7,7 @@ except:
 
 cur = conn.cursor()
 try:
-    cur.execute("""select "NAME", "AVG" from "SUMMARY_BATTERS";""")
+    cur.execute("""SELECT name, age FROM aaa;""")
     rows = cur.fetchall()
   
     for row in rows:

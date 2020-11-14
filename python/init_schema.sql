@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS aaa;
+CREATE TABLE aaa(
+  name VARCHAR(16),
+  age INT
+);
+
+

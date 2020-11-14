@@ -1,4 +1,5 @@
 import psycopg2
+from psycopg2.extras import execute_values
 
 try:
     conn = psycopg2.connect("dbname='test' host='127.0.0.1'")
@@ -7,8 +8,9 @@ except:
 
 cur = conn.cursor()
 try:
-    table_name = 'aaa'
-    cur.execute("insert into %s values (%%s, %%s)" % table_name, ['Kenny', 28])
+    arr = [("James", 26), ("Kristof", 25)]
+    execute_values(cur, "INSERT INTO aaa (name, age) VALUES %s", arr)
+
     conn.commit()
   
 except:

@@ -1,7 +1,9 @@
-#Force createuser to prompt for a password, please put P@ssw0rd
+#!/bin/bash
+
+# Force createuser to prompt for a password, put P@ssw0rd
 createuser kenny --password
 
-#run SQL script
+# run SQL script
 sqlCreate="create table abc(id int);" 
 sqlInsert="insert into abc(id) values(1);"
 sqlSelect="select * from abc;" 

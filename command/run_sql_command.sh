@@ -1,7 +1,5 @@
-#connect psql
-#psql test
+#!/bin/bash
 
-#run SQL script
 sqlCreate="create table abc(id int);" 
 sqlInsert="insert into abc(id) values(1);"
 sqlSelect="select * from abc;" 

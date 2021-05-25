@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS tmp(
   result VARCHAR(255),
   apply_to VARCHAR(255)
 );
-CREATE INDEX IF NOT EXISTS idx_title_tmp ON tmp (subtitle, title);
+CREATE INDEX IF NOT EXISTS idx_title_tmp ON tmp (subtitle, title, apply_to);
 TRUNCATE TABLE tmp;
 
 -- test

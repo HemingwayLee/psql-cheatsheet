@@ -1,3 +1,10 @@
+# How to run
+```
+docker-compose build 
+docker-compose up
+docker exec -it ${container_id} /bin/bash
+```
+
 # Connect
 ```
 psql --host xxx.rds.amazonaws.com --port 5432 --username=postgres --password --dbname=postgres
